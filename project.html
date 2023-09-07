@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="tailwind">
+    <style>
+      .spear::after{
+        display: block;
+        content:'';
+        width: 17px;
+        height: 17px;
+        border-radius: 100%;
+        border: solid 1px red;
+        position: absolute;
+        left: -2.9px;
+        top: -2px;
+      }
+      .home-list {
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s all linear;
+      }
+      .home_list_container:hover .home-list {
+        opacity: 1;
+        top: 30px;
+        visibility: visible;
+      }
+      .icon-animation {
+        transform: scale(0);
+        transition: 0.5s all ease-in;
+      }
+      .icon-1:hover .icon-animation {
+        transform: scale(1);
+      }
+      .mag {
+        transition: 0.5s all ease-in;
+      }
+      .icon-1:hover .mag {
+        color: white;
+      }
+      .img-hover,.img-hover1{
+        transition: all 0.4s linear;
+      }
+      .bar-hover{
+        transition: all 0.4s linear;
+        transition-delay: 0.4s;
+      }
+      .ele-hover:hover .img-hover1{
+opacity: 0;
+      }
+      .ele-hover:hover .img-hover{
+transform: scale(1.2);
+      }
+      .ele-hover:hover .bar-hover{
+        bottom: 5px;
+      }
+      .thing-img{
+        transition: 0.5s all linear;
+      }
+      .thing-hover:hover .thing-img{
+        transform: scale(1.1);
+        
+      }
+      .people-img{
+        transition: 0.5s all linear;
+      }
+      .people-hover:hover .people-img{
+transform: scale(1.1);
+
+      }
+      .wave1{
+      animation-name: wave;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      }
+      .wave2{
+        animation-name: wave;
+      animation-duration: 1.2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+       
+      }
+      .wave3{
+        animation-name: wave;
+      animation-duration: 1.4s;
+      animation-timing-function: linear;
+     
+      animation-iteration-count: infinite;
+       
+      }
+      .wave4{
+        animation-name: wave;
+      animation-duration: 1.6s;
+      animation-timing-function: linear;
+     
+      animation-iteration-count: infinite;
+       
+      }
+      .wave5{
+        animation-name: wave;
+      animation-duration: 1.8s;
+      animation-timing-function: linear;
+     
+      animation-iteration-count: infinite;
+       
+      }
+      .wave6{
+        animation-name: wave;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+     
+      animation-iteration-count: infinite;
+       
+      }
+      .people-text{
+        transition: 0.5s all linear;
+      }
+      .people-hover:hover .people-text{
+        color: white;
+      }
+      .eye-hover{
+      
+      }
+      .eye-div:hover .eye-hover{
+opacity: 0;
+transition: 0.4s all linear;
+      }
+      .eye-div:hover .eye-hover1{
+        bottom: 12px;
+        transition: 0.4s all linear;
+      }
+      @keyframes wave{
+        0%{
+          opacity: 0;
+        }
+        50%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#f2d9cd]">
+    <!-- first part -->
+    <header>
+      <nav
+        class="flex justify-between items-center bg-white xl:w-[70%] md:w-[90%] m-auto sticky mt-5 px-8 py-5 rounded-lg shadow-lg"
+      >
+        <!-- left side -->
+        <div>
+          <a href="#"><img src="https://new.axilthemes.com/demo/template/etrade/assets/images/logo/logo.png" alt="" class="w-[100px] h-[30px]"></a>
+        </div>
+        <!-- middle side -->
+        <div class="hidden lg:inline">
+        <div class="flex gap-x-8 ">
+          <div class="relative home_list_container flex gap-x-[10px]">
+            <a
+              href="#"
+              class="before:content-[''] before:w-[100%] before:h-[2px] before:bg-black before:absolute relative before:bottom-0 before:left-[-100%] hover:before:left-[0] overflow-hidden before:duration-[1s] block"
+              >Home</a
+            >
+            <i
+              class="fa-solid fa-chevron-left fa-rotate-270 text-[12px] mt-[1px]"
+            ></i>
+            <div
+              class="absolute w-[200px] bg-white shadow-lg p-4 top-[80px] home-list"
+            >
+              <a href="#" class="block">Home-Electronic</a>
+              <a href="#">Home phone</a>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="before:content-[''] before:w-[100%] before:h-[2px] before:bg-black before:absolute relative before:bottom-0 before:left-[-100%] hover:before:left-[0] overflow-hidden before:duration-[1s] block"
+            >Shop</a
+          >
+
+          <a
+            href="#"
+            class="before:content-[''] before:w-[100%] before:h-[2px] before:bg-black before:absolute relative before:bottom-0 before:left-[-100%] hover:before:left-[0] overflow-hidden before:duration-[1s] block"
+            >Pages</a
+          >
+          <a
+            href="#"
+            class="before:content-[''] before:w-[100%] before:h-[2px] before:bg-black before:absolute relative before:bottom-0 before:left-[-100%] hover:before:left-[0] overflow-hidden before:duration-[1s] block"
+            >About</a
+          >
+          <a
+            href="#"
+            class="before:content-[''] before:w-[100%] before:h-[2px] before:bg-black before:absolute relative before:bottom-0 before:left-[-100%] hover:before:left-[0] overflow-hidden before:duration-[1s] block"
+            >BLog</a
+          >
+          <a
+            href="#"
+            class="before:content-[''] before:w-[100%] before:h-[2px] before:bg-black before:absolute relative before:bottom-0 before:left-[-100%] hover:before:left-[0] overflow-hidden before:duration-[1s] block"
+            >Contact</a
+          >
+        </div>
+      </div>
+        <!-- right side -->
+        <div class="flex gap-x-5 items-center">
+          <div class="relative icon-1">
+            <i class="fa-solid fa-magnifying-glass mag"></i>
+            <span
+              class="absolute block top-[-3px] left-[-7px] bg-black shadow-lg z-[-1] icon-animation w-[30px] h-[30px] rounded-full"
+            ></span>
+          </div>
+          <div class="relative icon-1">
+            <i class="fa-solid fa-heart mag"></i>
+            <span
+              class="absolute block top-[-3px] left-[-7px] bg-black shadow-lg z-[-1] icon-animation w-[30px] h-[30px] rounded-full"
+            ></span>
+          </div>
+          <div class="relative icon-1">
+            <i class="fa-solid fa-cart-shopping mag"></i>
+            <span
+              class="absolute block top-[-3px] left-[-6px] bg-black shadow-lg z-[-1] icon-animation w-[30px] h-[30px] rounded-full"
+            ></span>
+          </div>
+          <div class="relative icon-1">
+            <i class="fa-solid fa-user mag"></i>
+            <span
+              class="absolute block top-[-3px] left-[-8px] bg-black shadow-lg z-[-1] icon-animation w-[30px] h-[30px] rounded-full"
+            ></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- second part -->
+    <section>
+      <div class="xl:w-[70%] md:w-[90%] sm:w-[90%] m-auto lg:mt-[50px] md:mt-[100px] mt-[50px] flex md:flex-row flex-col items-center justify-center md:items-start md:justify-start gap-x-[100px]">
+        <!-- left -->
+        <div class="flex flex-col items-center md:items-start gap-y-[10px]">
+          <div class="flex items-center gap-x-[10px]">
+            <i
+              class="fa-solid fa-fire-flame-curved rounded-full bg-[#db245f] w-[30px] h-[30px] flex justify-center items-center"
+              style="color: #fcfcfc"
+            ></i>
+            <span class="text-[#db245f] font-[700]">
+              Hot Deal In This Week</span
+            >
+          </div>
+          <h1 class="w-[300px] text-[50px] font-[600]">
+            Smart Digital <span class="text-center md:text-start block mt-[-20px]">Watch</span>
+          </h1>
+          <div class="mt-[30px]">
+            <button
+              class="bg-white px-[27px] py-[20px] rounded-md hover:scale-[1.1] duration-[0.5s]"
+            >
+              <i class="fa-solid fa-cart-shopping"></i
+              ><span class="font-[500] ml-[6px] text-[18px]">Shop Now</span>
+            </button>
+          </div>
+          <div class="flex gap-x-[14px] mt-[30px]">
+            <!-- img -->
+            <div class="flex items-center">
+              <div class="w-[36px] h-[36px]">
+                <img
+                  src="https://sguru.org/wp-content/uploads/2017/06/cool-anime-profile-pictures-11057487_1561621587452409_3478364893360535675_n.jpg"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  class="rounded-full"
+                />
+              </div>
+              <div
+                class="w-[40px] h-[40px] ml-[-13px] border border-white border-2 rounded-full"
+              >
+                <img
+                  src="https://sguru.org/wp-content/uploads/2017/06/cool-anime-profile-pictures-11057487_1561621587452409_3478364893360535675_n.jpg"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  class="rounded-full"
+                />
+              </div>
+              <div
+                class="w-[40px] h-[40px] ml-[-13px] border border-white border-2 rounded-full"
+              >
+                <img
+                  src="https://sguru.org/wp-content/uploads/2017/06/cool-anime-profile-pictures-11057487_1561621587452409_3478364893360535675_n.jpg"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  class="rounded-full"
+                />
+              </div>
+              <div
+                class="w-[40px] h-[40px] ml-[-13px] border border-white border-2 rounded-full"
+              >
+                <img
+                  src="https://sguru.org/wp-content/uploads/2017/06/cool-anime-profile-pictures-11057487_1561621587452409_3478364893360535675_n.jpg"
+                  alt=""
+                  width="100%"
+                  height="100%"
+                  class="rounded-full"
+                />
+              </div>
+            </div>
+            <!-- star -->
+            <div class="flex flex-col">
+              <div>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-regular fa-star" style="color: #d9d208"></i>
+              </div>
+              <div>
+                <span class="font-[600]">100+</span>
+                <span class="text-gray-500">Reviews</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right -->
+        <div>
+          <div class="relative lg:mt-[-60px] mt-[50px] md:mt-[60px] z-[-1]">
+            <img
+              src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/product-38.png"
+              alt=""
+             class=" lg:w-[550px] md:w-[600px] md:h-[350px] lg:h-auto"
+            />
+            <div
+              class="absolute md:w-[100px] w-[100px] h-[100px] md:h-[100px] md:top-[60px] top-[60px] left-[150px] md:left-[120px] lg:top-[130px] lg:left-[50%] lg:w-[120px] lg:h-[120px] rounded-full bg-white z-1 flex items-center justify-center"
+            >
+              <div class="flex flex-col items-center">
+                <span class="text-gray-500 md:text-[25px] text-[16px]">From</span>
+                <span class="text-blue-700 font-[600] md:text-[25px] text-[16px]">$49.00</span>
+              </div>
+            </div>
+            <div class="absolute top-[-50px] left-[-80px] z-[-1]">
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/others/shape-2.png"
+                alt=""
+                height="500px"
+                width="600px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- third-part -->
+    <section class="bg-white">
+ 
+    </section>
+    <section class="bg-white xl:h-[2450px]  lg:h-auto lg:pb-[100px] mt-[100px]">
+      <div class="xl:w-[85%] lg:w-[100%]  m-auto ">
+        <div class="lg:mx-[30px] md:mx-[20px] mx-[25px] ">
+          <div class="flex items-center gap-x-[10px] pt-[100px] ">
+            <i
+              class="fa-solid fa-tags rounded-full bg-[#db245f] w-[30px] h-[30px] flex justify-center items-center"
+              style="color: #fafafa"
+            ></i>
+            <span class="text-[#db245f] font-[700]"> Categories</span>
+          </div>
+          <div class="flex justify-between items-center md:pr-[12px] ">
+            <h1 class="text-[30px] md:text-[40px] font-[700]">Browse by Category</h1>
+            <div class="flex gap-x-[10px]">
+            <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left text-[20px]"></i></div>
+            <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left fa-rotate-180 text-[20px]"></i></div>
+        </div>
+          </div>
+          <!-- catego -->
+          <div class="flex gap-x-[20px] justify-center mt-[60px] ">
+            <div class="md:block w-[400px] md:w-auto ml-[20px] md:ml-0">
+            <div
+              class="  w-[90%] h-[200px] md:w-[150px] md:h-[150px] border flex flex-col justify-center items-center gap-y-[10px] rounded-md shadow-md hover:scale-[1.03] duration-[0.4s]"
+            >
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-4.png"
+                alt=""
+                width="45px"
+              />
+              <span class="font-[600]">Phones</span>
+            </div>
+          </div>
+            <div class="hidden md:block">
+            <div
+              class="w-[150px] h-[150px] border flex flex-col justify-center items-center gap-y-[10px] rounded-md shadow-md hover:scale-[1.03] duration-[0.4s]"
+            >
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-5.png"
+                alt=""
+                width="45px"
+              />
+              <span class="font-[600]">Phones</span>
+            </div>
+          </div>
+          <div class="hidden md:block">
+            <div
+              class="w-[150px] h-[150px] border flex flex-col justify-center items-center gap-y-[10px] rounded-md shadow-md hover:scale-[1.03] duration-[0.4s]"
+            >
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-11.png"
+                alt=""
+                width="45px"
+              />
+              <span class="font-[600]">Phones</span>
+            </div>
+            </div>
+            <div class="hidden md:block">
+            <div
+              class="w-[150px] h-[150px] border flex flex-col justify-center items-center gap-y-[10px] rounded-md shadow-md hover:scale-[1.03] duration-[0.4s]"
+            >
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-6.png"
+                alt=""
+                width="45px"
+              />
+              <span class="font-[600]">Phones</span>
+            </div>
+            </div>
+          <div class="hidden lg:block">
+            <div
+              class="w-[150px] h-[150px] border flex flex-col justify-center items-center gap-y-[10px] rounded-md shadow-md hover:scale-[1.03] duration-[0.4s] "
+            >
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-2.png"
+                alt=""
+                width="45px"
+              />
+              <span class="font-[600]">Phones</span>
+            </div>
+            </div>
+            <div class="hidden lg:block">
+            <div
+              class="w-[150px] h-[150px] border  flex flex-col justify-center items-center gap-y-[10px] rounded-md shadow-md hover:scale-[1.03] duration-[0.4s] "
+            >
+              <img
+                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-7.png"
+                alt=""
+                width="45px"
+              />
+              <span class="font-[600]">Phones</span>
+            </div>
+            </div>
+          </div>
+        </div>
+          <div class="lg:pl-[100px] bg-[#ccd7e6] w-[100%] xl:w-[100%] md:h-[1000px] h-[800px]  lg:h-[550px] xl:h-[500px] z-[2] flex flex-col  md:flex-col lg:flex-row  lg:relative xl:gap-x-[100px] lg:gap-x-[40px] mt-[100px] lg:mt-[100px] xl:mt-[150px]">
+            <div class="flex flex-col items-center md:items-center lg:items-start">
+              <div class="flex items-center gap-x-[10px] mt-[80px]">
+                <i
+                  class="fa-solid fa-fire-flame-curved rounded-full bg-[#db245f] w-[30px] h-[30px] flex justify-center items-center"
+                  style="color: #fcfcfc"
+                ></i>
+                <span class="text-[#db245f] font-[700]">
+                Don't miss</span
+                >
+              </div>
+              <h1 class="font-[700] text-[40px] w-[340px] text-center md:text-center lg:text-start">Enhance Your Music Experience</h1>
+              <div class="flex gap-x-[10px] mt-[30px]">
+<div class="w-[60px] h-[60px] rounded-full bg-white flex flex-col items-center justify-center">
+<span class="font-[600] text-[20px]">0</span>
+<span class="text-gray-500 mt-[-5px] block">Day</span>
+</div>
+<div class="w-[60px] h-[60px] rounded-full bg-white flex flex-col items-center justify-center">
+  <span class="font-[600] text-[20px]">00</span>
+  <span class="text-gray-500 mt-[-5px] block">Hrs</span>
+  </div>
+  <div class="w-[60px] h-[60px] rounded-full bg-white flex flex-col items-center justify-center">
+    <span class="font-[600] text-[20px]">00</span>
+    <span class="text-gray-500 mt-[-5px] block">Min</span>
+    </div>
+    <div class="w-[60px] h-[60px] rounded-full bg-white flex flex-col items-center justify-center">
+      <span class="font-[600] text-[20px]">00</span>
+      <span class="text-gray-500 mt-[-5px] block">Sec</span>
+      </div>
+              </div>
+              <div class="lg:ml-[50px] mt-[50px]" >
+                <span class=" text-white after:rounded-[6px] after:hover:scale-[1.1]  after:content-[''] after:w-[180px] after:h-[60px] after:bg-blue-700 after:duration-[0.5s] after:absolute relative after:bottom-[-18px] after:right-[-45px] after:z-[-1] z-[4] after:">Check it out</span>
+              </div>
+            </div>
+            <div class=" md:flex lg:block justify-center md:mt-[40px] lg:mt-[0] md:ml-[50px] lg:ml-[0] ">
+<img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/poster/poster-03.png" alt="" class="absolute xl:w-[500px] lg:w-[400px] mt-[50px] md:mt-[0] lg:left-[500px] xl:left-[550px] md:w-[420px]  w-[250px] z-[4] xl:top-[-100px] left-[70px] md:left-[180px] lg:bottom-[60px]">
+<div class="w-[300px] h-[300px] hidden md:block  relative xl:right-[-20px] md:top-[70px] md:right-[130px] lg:right-[50px] lg:top-[60px] xl:top-[0] overflow-hidden rotate-[-10deg]">
+  <div class="w-[30px] h-[30px] border-[4px] border-red-700 rounded-full absolute bottom-[-10px] right-[-10px] wave1"></div>
+  <div class="w-[50px] h-[50px] border-[4px] border-red-700 rounded-full absolute bottom-[-15px] right-[-15px]  wave2 "></div>
+  <div class="w-[80px] h-[80px] border-[4px] border-red-700 rounded-full absolute bottom-[-28px] right-[-28px]  wave3 "></div>
+  <div class="w-[100px] h-[100px] border-[4px] border-red-700 rounded-full absolute bottom-[-30px] right-[-30px]  wave4 "></div>
+  <div class="w-[120px] h-[120px] border-[4px] border-red-700 rounded-full absolute bottom-[-35px] right-[-35px]  wave5 "></div>
+  <div class="w-[140px] h-[140px] border-[4px] border-red-700 rounded-full absolute bottom-[-40px] right-[-40px]  wave6 "></div>
+</div>
+            </div>
+          </div>
+        </div>
+                </div>
+      </div>
+      <div class="xl:w-[80%] lg:w-[100%] m-auto">
+        <div class="lg:mx-[20px] md:mx-[30px] mx-[10px] xl:mx-[0] ">
+        <div class="flex items-center gap-x-[10px] pt-[100px] ">
+          <i
+            class="fa-solid fa-basket-shopping rounded-full bg-[#385ac7] w-[30px] h-[30px] flex justify-center items-center"
+            style="color: #fafafa"
+          ></i>
+          
+          <span class="text-[#385ac7] font-[700]"> Our Products</span>
+        </div>
+        <div class="flex justify-between pr-[12px]">
+          <h1 class="text-[35px] font-[700]">Explore our Products</h1>
+          <div class="flex gap-x-[10px]">
+          <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left text-[20px]"></i></div>
+          <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left fa-rotate-180 text-[20px]"></i></div>
+      </div>
+        </div>
+        </div>
+        <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 ml-[35px] md:ml-[45px]  lg:gap-x-[5px] xl:gap-x-[200px] gap-y-[50px] xl:mr-[130px] lg:ml-[25px] xl:ml-[0px] mt-[80px]">
+          <div class="w-[300px] h-[430px] bg-white relative  ele-hover">
+            <div class="bg-blue-400 absolute top-[20px] right-[-10px] shadow-lg z-[5] rounded-[4px] px-[10px]"><span class="font-[700] text-white">20% Off</span></div>
+            <div class="w-[300px] h-[300px] overflow-hidden  relative ">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png" alt="" width="100%" height="100%" class="scale-[1.1]  z-2">
+              <div class="absolute w-[300px] h-[300px] overflow-hidden top-0 left-0 z-[0] img-hover1"><img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png" alt="" width="100%" height="100%" class="scale[1.1] "></div>
+              <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+                <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center relative eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+                <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+                <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center relative eye-div"><i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-[10px] mt-[20px]">
+              <div>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-regular fa-star" style="color: #d9d208"></i>
+              </div>
+              <div>
+                <span class="font-[600] text-[20px]">Yantiti Leather &amp; Canvas Bags</span>
+                <div class="mt-[10px]">
+                  <span class="font-[500] text-[20px]">29.99</span>
+                  <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="w-[300px] h-[430px] bg-white relative ele-hover">
+          <div class="bg-blue-400 absolute top-[20px] right-[-10px] shadow-lg z-[5] rounded-[4px] px-[10px]"><span class="font-[700] text-white">20% Off</span></div>
+          <div class="w-[300px] h-[300px] overflow-hidden relative ">
+            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-06.png" alt="" width="100%" height="100%" class="scale-[1.1]">
+            <div class="absolute w-[300px] h-[300px] overflow-hidden top-0 left-0 z-[0] img-hover1"><img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-02.png" alt="" width="100%" height="100%" class="scale[1.1] "></div>
+            <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+              <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+              <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+              <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"> <i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-[10px] mt-[20px]">
+            <div>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-regular fa-star" style="color: #d9d208"></i>
+            </div>
+            <div>
+              <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">Level 20 RGB Cherry</a></span>
+              <div class="mt-[10px]">
+                <span class="font-[500] text-[20px]">29.99</span>
+                <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="w-[300px] h-[430px] bg-white relative  ele-hover">
+        <div class="bg-blue-400 absolute top-[20px] right-[-10px] shadow-lg z-[5] rounded-[4px] px-[10px]"><span class="font-[700] text-white">20% Off</span></div>
+        <div class="w-[300px] h-[300px] overflow-hidden relative ">
+          <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-03.png" alt="" width="100%" height="100%" class="scale-[1.1] img-hover">
+          <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+            <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+            <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+            <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"> <i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-y-[10px] mt-[20px]">
+          <div>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-regular fa-star" style="color: #d9d208"></i>
+          </div>
+          <div>
+            <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">Logitech Streamcam</a></span>
+            <div class="mt-[10px]">
+              <span class="font-[500] text-[20px]">29.99</span>
+              <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="w-[300px] h-[430px] bg-white relative  ele-hover">
+      <div class="bg-blue-400 absolute top-[20px] right-[-10px] shadow-lg z-[5] rounded-[4px] px-[10px]"><span class="font-[700] text-white">20% Off</span></div>
+      <div class="w-[300px] h-[300px] overflow-hidden relative ">
+        <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-05.png" alt="" width="100%" height="100%" class="scale-[1.1] img-hover">
+        
+        <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+          <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+          <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+          <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-[10px] mt-[20px]">
+        <div>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-regular fa-star" style="color: #d9d208"></i>
+        </div>
+        <div>
+          <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">Bass Meets Clarity</a></span>
+          <div class="mt-[10px]">
+            <span class="font-[500] text-[20px]">29.99</span>
+            <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="w-[300px] h-[430px] bg-white  ele-hover">
+    <div class="w-[300px] h-[300px] overflow-hidden relative ">
+      <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-04.png" alt="" width="100%" height="100%" class="scale-[1.1] img-hover">
+      <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+        <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+        <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+        <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+      </div>
+    </div>
+    <div class="flex flex-col gap-y-[10px] mt-[20px]">
+      <div>
+        <i class="fa-solid fa-star" style="color: #d9d208"></i>
+        <i class="fa-solid fa-star" style="color: #d9d208"></i>
+        <i class="fa-solid fa-star" style="color: #d9d208"></i>
+        <i class="fa-solid fa-star" style="color: #d9d208"></i>
+        <i class="fa-regular fa-star" style="color: #d9d208"></i>
+      </div>
+      <div>
+        <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">3D™ wireless headset</a></span>
+        <div class="mt-[10px]">
+          <span class="font-[500] text-[20px]">29.99</span>
+          <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="w-[300px] h-[430px] bg-white  ele-hover">
+  <div class="w-[300px] h-[300px] overflow-hidden relative ">
+    <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-06.png" alt="" width="100%" height="100%" class="scale-[1.1] img-hover">
+    <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+      <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+      <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+      <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-y-[10px] mt-[20px]">
+    <div>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-regular fa-star" style="color: #d9d208"></i>
+    </div>
+    <div>
+      <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">Mice Logitech</a></span>
+      <div class="mt-[10px]">
+        <span class="font-[500] text-[20px]">29.99</span>
+        <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+      </div>
+    </div>
+</div>
+</div>
+<div class="w-[300px] h-[430px] bg-white  ele-hover">
+  <div class="w-[300px] h-[300px] overflow-hidden relative ">
+    <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-07.png" alt="" width="100%" height="100%" class="scale-[1.1] img-hover">
+    <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+      <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+      <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+      <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-y-[10px] mt-[20px]">
+    <div>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-regular fa-star" style="color: #d9d208"></i>
+    </div>
+    <div>
+      <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">Zone Headphone</a></span>
+      <div class="mt-[10px]">
+        <span class="font-[500] text-[20px]">29.99</span>
+        <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+      </div>
+    </div>
+</div>
+</div>
+<div class="w-[300px] h-[430px] bg-white  ele-hover">
+  <div class="w-[300px] h-[300px] overflow-hidden relative ">
+    <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png" alt="" width="100%" height="100%" class="scale-[1.1] img-hover">
+    <div class="flex absolute bottom-[-100%] items-center left-[30px] bar-hover gap-x-[10px] ">
+      <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-solid fa-eye eye-hover " style="color: #fafafa;"></i><i class="fa-solid fa-eye absolute bottom-[-100%] eye-hover1" style="color: #faf7f7;"></i></div>
+      <div class="bg-[#db245f] text-[white] rounded-[10px] px-[30px] py-[12px] hover:scale-[1.1] duration-[0.3s]">Add to Cart</div>
+      <div class="w-[40px] h-[40px] bg-gray-500 rounded-[10px] flex items-center justify-center eye-div"><i class="fa-regular fa-heart eye-hover" style="color: #ffffff;"></i><i class="fa-regular fa-heart absolute bottom-[-100%] eye-hover1" style="color: #ffffff;"></i></div>
+    </div>
+  </div>
+  <div class="flex flex-col gap-y-[10px] mt-[20px]">
+    <div>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-solid fa-star" style="color: #d9d208"></i>
+      <i class="fa-regular fa-star" style="color: #d9d208"></i>
+    </div>
+    <div>
+      <span class="font-[600] text-[20px] text-gray-500"><a href="single-product.html" tabindex="0">3D™ wireless headset</a></span>
+      <div class="mt-[10px]">
+        <span class="font-[500] text-[20px]">29.99</span>
+        <span class="text-gray-400 font-[500] text-[20px] line-through ml-[10px]">49.99</span>
+      </div>
+    </div>
+</div>
+</div>
+      </div></div>
+      <div class="flex justify-center mt-[60px]"><button class="text-gray-500 font-[600] bg-gray-300 px-[30px] py-[15px] text-[20px] rounded-[10px]">View all products</button></div>
+    </section>
+    
+    <!-- fourth-part -->
+    <section class="bg-[#eef1d9] xl:h-[600px] lg:h-[700px] md:h-[500px] h-[600px] ">
+<div class="w-[85%] m-auto">
+  <div class="flex items-center gap-x-[10px] pt-[100px]">
+    <i
+      class="fa-solid fa-quote-left rounded-full bg-[#db245f] w-[30px] h-[30px] flex justify-center items-center"
+      style="color: #fafafa"
+    ></i>
+    
+    <span class="text-[#db245f] font-[700]"> Testimonials</span>
+  </div>
+  <div class="flex justify-between pr-[12px]">
+    <h1 class="text-[25px] md:text-[35px] font-[700]">Users Feedback</h1>
+    <div class="flex gap-x-[10px]">
+    <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left text-[20px]"></i></div>
+    <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left fa-rotate-180 text-[20px]"></i></div>
+</div>
+  </div>
+  <div class="flex gap-x-[40px] mt-[30px]">
+    <div class="w-[400px]">
+      <div class="lg:w-[200px] md:w-[650px] pb-[15px] px-[20px] lg:px-[0] lg:pb-[10px] lg:px-[10px] xl:w-[400px] xl:h-[200px] bg-white flex justify-center pt-[30px] rounded-[5px] shadow-lg">
+        <p class="lg:w-[330px] md:w-full text-[17px] text-gray-500">“ It’s amazing how much easier it has been to
+          meet new people and create instantly non
+          connections. I have the exact same personal
+          the only thing that has changed is my mind
+          set and a few behaviors. “</p>
+      </div>
+      <div class="flex items-center gap-x-[20px] mt-[30px]">
+<div class="w-[70px] h-[60px] bg-white rounded-[10px]">
+  <img src="https://i.pinimg.com/originals/fd/af/84/fdaf840256216adcbb22a1b1d48e4e30.jpg" alt="" width="100%" height="100%" class="rounded-[5px]">
+</div>
+<div>
+  <h1 class="text-gray-500 font-[500]">Head Of ldea</h1>
+  <p class="text-[17px] font-[600]">James C.Anderson</p>
+</div>
+      </div>
+    </div>
+    <div class="w-[400px] mt-[40px] hidden lg:block">
+      <div class="lg:w-[200px]  lg:pb-[10px] lg:px-[10px] xl:w-[400px] xl:h-[200px] bg-white flex justify-center pt-[30px] rounded-[5px] shadow-lg">
+        <p class="w-[330px] text-[17px] text-gray-500">“ It’s amazing how much easier it has been to
+          meet new people and create instantly non
+          connections. I have the exact same personal
+          the only thing that has changed is my mind
+          set and a few behaviors. “</p>
+      </div>
+      <div class="flex items-center gap-x-[20px] mt-[30px]">
+<div class="w-[70px] h-[60px] bg-white rounded-[10px]">
+  <img src="https://i.pinimg.com/originals/fd/af/84/fdaf840256216adcbb22a1b1d48e4e30.jpg" alt="" width="100%" height="100%" class="rounded-[5px]">
+</div>
+<div>
+  <h1 class="text-gray-500 font-[500]">Head Of ldea</h1>
+  <p class="text-[17px] font-[600]">James C.Anderson</p>
+</div>
+      </div>
+    </div>
+    <div class="w-[400px] hidden lg:block">
+      <div class="lg:w-[200px] lg:pb-[10px] lg:px-[10px] xl:w-[400px] xl:h-[200px] bg-white flex justify-center pt-[30px] rounded-[5px] shadow-lg">
+        <p class="w-[330px] text-[17px] text-gray-500">“ It’s amazing how much easier it has been to
+          meet new people and create instantly non
+          connections. I have the exact same personal
+          the only thing that has changed is my mind
+          set and a few behaviors. “</p>
+      </div>
+      <div class="flex items-center gap-x-[20px] mt-[30px]">
+<div class="w-[70px] h-[60px] bg-white rounded-[10px]">
+  <img src="https://i.pinimg.com/originals/fd/af/84/fdaf840256216adcbb22a1b1d48e4e30.jpg" alt="" width="100%" height="100%" class="rounded-[5px]">
+</div>
+<div>
+  <h1 class="text-gray-500 font-[500]">Head Of ldea</h1>
+  <p class="text-[17px] font-[600]">James C.Anderson</p>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+    <!-- five part -->
+    <section class="bg-white h-[700px] ">
+      <div class="w-[85%] m-auto">
+        <div class="flex items-center gap-x-[10px] pt-[100px]">
+          <i
+            class="fa-solid fa-basket-shopping rounded-full bg-[#385ac7] w-[30px] h-[30px] flex justify-center items-center"
+            style="color: #fafafa"
+          ></i>
+          
+          <span class="text-[#385ac7] font-[700]">This week's</span>
+        </div>
+        <div class="flex justify-between items-center md:pr-[12px]">
+          <h1 class="text-[35px] font-[700]">New Arrivals</h1>
+          <div class="flex gap-x-[10px]">
+          <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left text-[20px]"></i></div>
+          <div class="w-[40px] h-[40px] bg-gray-400 rounded-lg flex justify-center items-center"><i class="fa-solid fa-arrow-left fa-rotate-180 text-[20px]"></i></div>
+      </div>
+        </div>
+        <div class=" mt-[60px] flex justify-center items-center">
+          <div class="w-[300px] h-[400px] flex flex-col items-center">
+            <div class="w-[250px] h-[250px] rounded-full overflow-hidden mb-[10px]">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-05.png" alt="" width="100%" height="100%" class="rounded-full hover:scale-[1.1] duration-[0.5s]">
+            </div>
+            <div class="flex justify-center gap-x-[20px]">
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+            </div>
+            <div class="flex flex-col items-center mt-[20px]">
+              <span class="text-gray-500 font-[500] text-[18px]"><a href="single-product.html" tabindex="0">Demon's Souls</a></span>
+            <div class="flex gap-x-[10px]">
+              <span class="text-[18px] font-[500] text-gray-400 line-through">$40</span>
+              <span class="text-[18px] font-[700]">$30</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-[10px] mt-[20px] ">
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-eye fa-fade " style="color: #090000;"></i></div>
+            <div class="bg-[#db245f] text-[white] rounded-[10px] px-[24px] py-[12px] hover:scale-[1.1] duration-[0.3s] font-[700]">Add to Cart</div>
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-heart fa-fade" style="color: #050505;"></i></div>
+          </div>
+          
+          </div>
+          <div class="hidden lg:block">
+          <div class="w-[300px] h-[400px] flex flex-col items-center ">
+            <div class="w-[250px] h-[250px] rounded-full overflow-hidden mb-[10px]">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-06.png" alt="" width="100%" height="100%" class="rounded-full hover:scale-[1.1] duration-[0.5s]">
+            </div>
+            <div class="flex justify-center gap-x-[20px]">
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+            </div>
+            <div class="flex flex-col items-center mt-[20px]">
+              <span class="text-gray-500 font-[500] text-[18px]"><a href="single-product.html" tabindex="0">Google Home</a></span>
+            <div class="flex gap-x-[10px]">
+              <span class="text-[18px] font-[500] text-gray-400 line-through">$40</span>
+              <span class="text-[18px] font-[700]">$30</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-[10px] mt-[20px] ">
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-eye fa-fade " style="color: #090000;"></i></div>
+            <div class="bg-[#db245f] text-[white] rounded-[10px] px-[24px] py-[12px] hover:scale-[1.1] duration-[0.3s] font-[700]">Add to Cart</div>
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-heart fa-fade" style="color: #050505;"></i></div>
+          </div>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <div class="w-[300px] h-[400px] flex flex-col items-center ">
+            <div class="w-[250px] h-[250px] rounded-full overflow-hidden mb-[10px]">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-07.png" alt="" width="100%" height="100%" class="rounded-full hover:scale-[1.1] duration-[0.5s]">
+            </div>
+            <div class="flex justify-center gap-x-[20px]">
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+            </div>
+            <div class="flex flex-col items-center mt-[20px]">
+              <span class="text-gray-500 font-[500] text-[18px]"><a href="single-product.html" tabindex="0">Netfilx Remot</a></span>
+            <div class="flex gap-x-[10px]">
+              <span class="text-[18px] font-[500] text-gray-400 line-through">$40</span>
+              <span class="text-[18px] font-[700]">$30</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-[10px] mt-[20px] ">
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-eye fa-fade " style="color: #090000;"></i></div>
+            <div class="bg-[#db245f] text-[white] rounded-[10px] px-[24px] py-[12px] hover:scale-[1.1] duration-[0.3s] font-[700]">Add to Cart</div>
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-heart fa-fade" style="color: #050505;"></i></div>
+          </div>
+          </div>
+        </div>
+        <div class=" hidden md:block lg:hidden xl:block">
+          <div class="w-[300px] h-[400px] flex flex-col items-center  ">
+            <div class="w-[250px] h-[250px] rounded-full overflow-hidden mb-[10px]">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png" alt="" width="100%" height="100%" class="rounded-full hover:scale-[1.1] duration-[0.5s]">
+            </div>
+            <div class="flex justify-center gap-x-[20px]">
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+              <div class="w-[12px] h-[12px] rounded-full bg-red-500 spear relative"></div>
+            </div>
+            <div class="flex flex-col items-center mt-[20px]">
+              <span class="text-gray-500 font-[500] text-[18px]"><a href="single-product.html" tabindex="0">Digital Accessories</a></span>
+            <div class="flex gap-x-[10px]">
+              <span class="text-[18px] font-[500] text-gray-400 line-through">$40</span>
+              <span class="text-[18px] font-[700]">$30</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-x-[10px] mt-[20px] ">
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-eye fa-fade " style="color: #090000;"></i></div>
+            <div class="bg-[#db245f] text-[white] rounded-[10px] px-[24px] py-[12px] hover:scale-[1.1] duration-[0.3s] font-[700]">Add to Cart</div>
+            <div class="w-[40px] h-[40px] bg-white rounded-[10px] flex items-center justify-center shadow-xl"><i class="fa-solid fa-heart fa-fade" style="color: #050505;"></i></div>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- six part -->
+    <section class="md:h-[1700px]  xl:h-[1000px] bg-white">
+      <div class="w-[85%] m-auto">
+        <div class="flex flex-col items-center gap-y-[20px]">
+        <div class="flex items-center gap-x-[10px] pt-[100px]">
+          <i
+            class="fa-solid fa-star rounded-full bg-[#385ac7] w-[30px] h-[30px] flex justify-center items-center"
+            style="color: #fafafa"
+          ></i>
+          
+          <span class="text-[#385ac7] font-[700]">Most Sold</span>
+        </div>
+        <h1 class="text-[25px] md:text-[30px] font-[700]">Most Sold in eTrade Store</h1>
+      </div>
+      <div class="flex xl:gap-x-[70px] gap-y-[10px] lg:gap-y-[10px] xl:gap-y-[0] justify-center mt-[50px] lg:flex-col flex-col xl:flex-row">
+        <!-- left flex -->
+        <div class="flex flex-col gap-y-[20px]">
+          <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+            <div class="flex flex-col md:flex-row items-center gap-x-[20px] gap-y-[50px] md:gap-y-0">
+            <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden mt-[20px] md:mt-[0]">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-09.png" alt="" class="md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+            <div class="flex gap-x-[10px]">
+              <div>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-regular fa-star" style="color: #d9d208"></i>
+              </div>
+              <div>
+                <span class="font-[600]">100+</span>
+                <span class="text-gray-500">Reviews</span>
+              </div>
+
+          </div>
+          <div class=" flex flex-col gap-y-[5px]">
+          <span class="text-gray-500 text-[18px]">Media Remote</span>
+          <div class="flex gap-x-[10px]">
+            <span class="text-[20px] font-[700]">$29.99</span>
+            <span class="text-[20px] text-gray-300 line-through">$49.99</span>
+          </div>
+        </div>
+        </div>
+          </div>
+          <div class="flex md:flex-col flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0]">
+            <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+            <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+          </div>
+        </div>
+        <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+          <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+          <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-10.png" alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+          </div>
+          <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+          <div class="flex gap-x-[10px]">
+            <div>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-regular fa-star" style="color: #d9d208"></i>
+            </div>
+            <div>
+              <span class="font-[600]">50+</span>
+              <span class="text-gray-500">Reviews</span>
+            </div>
+
+        </div>
+        <div class=" flex flex-col gap-y-[5px]">
+        <span class="text-gray-500 text-[18px]">HD Camera</span>
+        <div class="flex gap-x-[10px] justify-center md:justify-start">
+          <span class="text-[20px] font-[700] t">$49.99</span>
+         
+        </div>
+      </div>
+      </div>
+        </div>
+        <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+          <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+          <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+        </div>
+      </div>
+      <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+        <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+        <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+          <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-12.png" alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+        <div class="flex gap-x-[10px]">
+          <div>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-regular fa-star" style="color: #d9d208"></i>
+          </div>
+          <div>
+            <span class="font-[600]">30+</span>
+            <span class="text-gray-500">Reviews</span>
+          </div>
+
+      </div>
+      <div class=" flex flex-col gap-y-[5px]">
+      <span class="text-gray-500 text-[18px]">Wall Mount</span>
+      <div class="flex gap-x-[10px] justify-center md:justify-start">
+        <span class="text-[20px] font-[700] t">$19.00</span>
+       
+      </div>
+    </div>
+    </div>
+      </div>
+      <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+        <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+        <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+      </div>
+    </div>
+    <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+      <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+      <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+        <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-13.png" alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+      </div>
+      <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+      <div class="flex gap-x-[10px]">
+        <div>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-regular fa-star" style="color: #d9d208"></i>
+        </div>
+        <div>
+          <span class="font-[600]">700+</span>
+          <span class="text-gray-500">Reviews</span>
+        </div>
+
+    </div>
+    <div class=" flex flex-col gap-y-[5px]">
+    <span class="text-gray-500 text-[18px]">Lenevo Laptop</span>
+    <div class="flex gap-x-[10px] justify-center md:justify-start">
+      <span class="text-[20px] font-[700] t">$999.99</span>
+     
+    </div>
+  </div>
+  </div>
+    </div>
+    <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+      <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+      <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+    </div>
+  </div>
+        </div>
+        <!-- right flex -->
+        <div class="flex flex-col gap-y-[20px]">
+          <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+            <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+            <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+              <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-14.png" alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+            </div>
+            <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+            <div class="flex gap-x-[10px]">
+              <div>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-solid fa-star" style="color: #d9d208"></i>
+                <i class="fa-regular fa-star" style="color: #d9d208"></i>
+              </div>
+              <div>
+                <span class="font-[600]">300+</span>
+                <span class="text-gray-500">Reviews</span>
+              </div>
+  
+          </div>
+          <div class=" flex flex-col gap-y-[5px]">
+          <span class="text-gray-500 text-[18px]">Juice Grinder Machine</span>
+          <div class="flex gap-x-[10px] justify-center md:justify-start">
+            <span class="text-[20px] font-[700] t">$99.00</span>
+           
+          </div>
+        </div>
+        </div>
+          </div>
+          <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+            <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+            <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+          </div>
+        </div>
+        <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+          <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+          <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-15.png "alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+          </div>
+          <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+          <div class="flex gap-x-[10px]">
+            <div>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-solid fa-star" style="color: #d9d208"></i>
+              <i class="fa-regular fa-star" style="color: #d9d208"></i>
+            </div>
+            <div>
+              <span class="font-[600]">100+</span>
+              <span class="text-gray-500">Reviews</span>
+            </div>
+
+        </div>
+        <div class=" flex flex-col gap-y-[5px]">
+        <span class="text-gray-500 text-[18px]">Wireless Headphone</span>
+        <div class="flex gap-x-[10px] justify-center md:justify-start">
+          <span class="text-[20px] font-[700] t">$59.99</span>
+         
+        </div>
+      </div>
+      </div>
+        </div>
+        <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+          <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+          <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+        </div>
+      </div>
+      <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+        <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+        <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+          <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-16.png" alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+        </div>
+        <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+        <div class="flex gap-x-[10px]">
+          <div>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-solid fa-star" style="color: #d9d208"></i>
+            <i class="fa-regular fa-star" style="color: #d9d208"></i>
+          </div>
+          <div>
+            <span class="font-[600]">100+</span>
+            <span class="text-gray-500">Reviews</span>
+          </div>
+
+      </div>
+      <div class=" flex flex-col gap-y-[5px]">
+      <span class="text-gray-500 text-[18px]">Asus Zenbook Laptop</span>
+      <div class="flex gap-x-[10px] justify-center md:justify-start">
+        <span class="text-[20px] font-[700] t">$899.00</span>
+       
+      </div>
+    </div>
+    </div>
+      </div>
+      <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+        <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+        <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+      </div>
+    </div>
+    <div class="xl:w-[500px] lg:w-[100%] md:h-[160px] h-[400px] md:pl-[20px]  rounded-[5px] hover:shadow-xl border  border-gray thing-hover hover:border-none transition:shadow-xl duration-[0.7s] flex flex-col md:flex-row md:justify-between md:px-[20px] xl:px-0 xl:justify-around items-center">
+      <div class="flex flex-col md:flex-row items-center gap-y-[50px] gap-x-[20px] md:gap-y-0">
+      <div class="md:w-[90px] w-[250px] h-[150px] md:h-[90px] rounded-[8px] bg-[#fafafa] flex justify-center items-center overflow-hidden  mt-[20px] md:mt-[0]">
+        <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-11.png" alt="" class=" md:w-[100%] md:h-[100%] w-[100px] h-[100px] rounded-[8px] thing-img">
+      </div>
+      <div class="flex flex-col items-center md:items-start gap-y-[3px]">
+      <div class="flex gap-x-[10px]">
+        <div>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-solid fa-star" style="color: #d9d208"></i>
+          <i class="fa-regular fa-star" style="color: #d9d208"></i>
+        </div>
+        <div>
+          <span class="font-[600]">120+</span>
+          <span class="text-gray-500">Reviews</span>
+        </div>
+
+    </div>
+    <div class=" flex flex-col gap-y-[5px]">
+    <span class="text-gray-500 text-[18px]">Gaiming Controller</span>
+    <div class="flex gap-x-[10px] justify-center md:justify-start">
+      <span class="text-[20px] font-[700] t">$50.00</span>
+     
+    </div>
+  </div>
+  </div>
+    </div>
+    <div class="flex flex-row gap-x-[20px] md:gap-x-[0] gap-y-[10px] mt-[20px] md:mt-[0] md:flex-col gap-y-[10px]">
+      <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300 "><i class="fa-solid fa-cart-shopping" style="color: #0f0f0f;"></i></div>
+      <div class="w-[35px] h-[35px] border border-black rounded-[5px] flex justify-center items-center hover:bg-blue-300"><i class="fa-regular fa-heart" style="color: #050505;"></i></div>
+    </div>
+  </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <!-- seven part -->
+    <section class="xl:h-[500px] md:h-[800px] bg-white">
+      <div class="w-[85%] m-auto  pt-[30px] ">
+        <div class="flex flex-col items-center ">
+        <div class="flex items-center gap-x-[10px] ">
+          <i
+            class="fa-regular fa-thumbs-up rounded-full bg-[#db245f] w-[30px] h-[30px] flex justify-center items-center"
+            style="color: #fcfcfc"
+          ></i>
+         
+          <span class="text-[#db245f] font-[700]">
+           Why Us</span
+          >
+        </div>
+        <div>
+          <h1 class="text-[25px] md:text-[40px] font-[700]">Why People Choose Us</h1>
+        </div>
+      </div>
+      <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-y-[20px] md:gap-x-[40px] md:gap-y-[10px] xl:gap-x-[20px] mt-[30px]">
+        <div class="w-[320px] md:w-[220px] h-[250px] rounded-[5px] border border-gray flex flex-col items-center justify-center gap-y-[20px] hover:shadow-lg">
+          <div> <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service6.png" alt="" width="60px" height="60px"></div>
+        
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-[18px] font-[700]">Fast & Secure</span>
+          <span class="text-[18px] font-[700]">Delivery</span>
+        </div>
+        </div>
+        <div class="w-[320px] md:w-[220px] h-[250px] rounded-[5px] border border-gray flex flex-col items-center justify-center gap-y-[20px] hover:shadow-lg">
+          <div> <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service7.png" alt="" width="60px" height="60px"></div>
+        
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-[18px] font-[700]">100% Guarantee</span>
+          <span class="text-[18px] font-[700]">On Product</span>
+        </div>
+        </div>
+        <div class="w-[320px] md:w-[220px] h-[250px] rounded-[5px] border border-gray flex flex-col items-center justify-center gap-y-[20px] hover:shadow-lg">
+          <div> <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service8.png" alt="" width="60px" height="60px"></div>
+        
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-[18px] font-[700]">24 Hour Return</span>
+          <span class="text-[18px] font-[700]">Policy</span>
+        </div>
+        </div>
+        <div class="w-[320px] md:w-[220px] h-[250px] rounded-[5px] border border-gray flex flex-col items-center justify-center gap-y-[20px] hover:shadow-lg">
+          <div> <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service9.png" alt="" width="60px" height="60px"></div>
+        
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-[18px] font-[700]">24 Hour Return</span>
+          <span class="text-[18px] font-[700]">Policy</span>
+        </div>
+        </div>
+        <div class="w-[320px] md:w-[220px] h-[250px] rounded-[5px] border border-gray flex flex-col items-center justify-center gap-y-[20px] hover:shadow-lg">
+          <div> <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service10.png" alt="" width="60px" height="60px"></div>
+        
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-[18px] font-[700]">Next Level Pro</span>
+          <span class="text-[18px] font-[700]">Quality</span>
+        </div>
+        </div>
+        
+      </div>
+
+      </div>
+    </section>
+    <!-- eight part -->
+    <section class="lg:h-[400px] md:h-[700px] bg-white">
+      <div class=" xl:w-[85%] lg:w-[100%] xl:m-auto">
+<div class="pt-[100px] md:pt-[0px] pb-[100px] mx-[10px] flex lg:justify-center gap-y-[20px] lg:gap-y-[0] lg:flex-row flex-col md:items-center xl:gap-x-[30px] lg:gap-x-[10px] lg:px-[20px]">
+  <div class="lg:w-[650px] xl:w-[600px] lg:h-[220px] xl:h-[200px] bg-red-500 rounded-[10px] overflow-hidden people-hover">
+    <div class="lg:w-[650px] xl:w-[600px] lg:h-[220px] xl:h-[220px] relative">
+<img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/poster/poster-01.png" alt="" class="people-img">
+<div class="absolute xl:left-[240px] left-[200px] top-[30px] md:left-[240px] md:top-[50px] lg:left-[220px] lg:top-[50px] xl:top-[50px]">
+  <div class="flex flex-col justify-center">
+    <span class="text-[18px] md:text-[35px] text-white font-[700]">Rich sound</span>
+    <span class="text-[18px] md:text-[35px] text-white font-[700]">for less</span>
+  </div>
+  <div class="flex items-center gap-x-[20px] text-[18px]"><span class="text-gray-500 people-text">Collection</span><i class="fa-solid fa-arrow-right text-gray-500 mt-[2px] people-text"></i></div>
+</div>
+    </div>
+  </div>
+  <div class="lg:w-[650px] xl:w-[600px] lg:h-[220px] xl:h-[200px] bg-red-500 rounded-[10px] overflow-hidden people-hover">
+    <div class="lg:w-[650px] xl:w-[600px] lg:h-[220px] xl:h-[220px] relative lg:right-[60px] xl:right-[0]">
+<img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/poster/poster-02.png" alt="" class="people-img ">
+<div class="absolute xl:left-[130px]  left-[50px] top-[30px] md:right-[290px] md:top-[50px] lg:left-[140px] lg:top-[50px] xl:top-[50px]">
+  <div class="flex flex-col justify-center">
+    <div class="flex items-center gap-x-[20px] text-[18px]"><span class="text-gray-500 people-text">50% offer in winter</span></div>
+    <span class="text-[18px] md:text-[35px] text-white font-[700]">Get VR</span>
+    <span class="text-[18px]s md:text-[35px] text-white font-[700]">Reality Glass</span>
+  </div>
+ 
+</div>
+    </div>
+  </div>
+</div>
+      </div>
+    </section>
+    <!-- ninepart -->
+    <section class="xl:h-[500px] lg:h-[500px] md:h-[500px] bg-white">
+<div class="xl:w-[85%] lg:w-[100%] m-auto">
+<div class="relative">
+  <div class="w-[95%] h-[400px] m-auto">
+    <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/bg/bg-image-5.jpg" alt="" class="lg:w-[100%] lg:h-[100%] md:h-[350px] h-[350px] object-cover">
+  </div>
+  <div class="absolute top-0 xl:left-[200px] left-[50px] md:left-[80px] lg:left-[50px]">
+  <div class="flex flex-col gap-y-[5px]">
+    <div class="flex items-center gap-x-[10px] pt-[100px]">
+      <i
+        class="fa-solid fa-star rounded-full bg-[#385ac7] w-[30px] h-[30px] flex justify-center items-center"
+        style="color: #fafafa"
+      ></i>
+      
+      <span class="text-[#385ac7] font-[700]">New Letter</span>
+    </div>
+    <div >
+      <h1 class="text-[30px] font-[500]">Get Weekly Update</h1>
+    </div>
+    <form action="" class="mt-[20px] md:mt-[40px]">
+      <input type="mail" class="outline-none px-[50px] md:px-[100px] py-[13px] rounded-[5px]">
+      <button class="bg-black text-white text-[20px] font-[700] px-[20px] py-[10px] rounded-[10px] mt-[20px]">Subscribe</button>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+    </section>
+    <!-- ten part -->
+<section class="xl:h-[200px] md:h-[250px] lg:h-[200px] bg-white">
+  <div class="xl:w-[85%] lg:w-[100%] m-auto">
+<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-col-1 gap-y-[30px] xl:ml-[50px] ml-[60px] md:ml-[80px] lg:ml-[30px] ">
+  <div class="flex items-center gap-x-[30px] md:gap-x-[10px]">
+<img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service1.png" alt="" width="45px" height="40px">
+<div class="flex flex-col gap-y-[2px]">
+  <span class="font-[700] lg:text-[14px] xl:text-[18px]">Fast & Secure Delivery</span>
+  <span class="text-gray-500 lg:text-[13px] xl:text-[16px]">Tell about your service.</span>
+</div>
+  </div>
+  <div class="flex items-center gap-x-[30px] md:gap-x-[10px] gap-x-[10px]">
+    <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service2.png" alt="" width="45px" height="40px">
+    <div class="flex flex-col gap-y-[2px]">
+      <span class="font-[700] lg:text-[14px] xl:text-[18px]">Money Back Guarantee</span>
+      <span class="text-gray-500 lg:text-[13px] xl:text-[16px]">Within 10 days.</span>
+    </div>
+      </div>
+      <div class="flex items-center gap-x-[30px] md:gap-x-[10px] gap-x-[10px]">
+        <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service3.png" alt="" width="45px" height="40px">
+        <div class="flex flex-col gap-y-[2px]">
+          <span class="font-[700] lg:text-[14px] xl:text-[18px]">24 Hour Return Policy</span>
+          <span class="text-gray-500 lg:text-[13px] xl:text-[16px]">No question ask.</span>
+        </div>
+          </div>
+          <div class="flex items-center gap-x-[30px] md:gap-x-[10px] gap-x-[10px]">
+            <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/icons/service4.png" alt="" width="45px" height="40px">
+            <div class="flex flex-col gap-y-[2px]">
+              <span class="font-[700] lg:text-[14px] xl:text-[18px]">Pro Quality Support</span>
+              <span class="text-gray-500 lg:text-[13px] xl:text-[16px]">24/7 Live support.</span>
+            </div>
+              </div>
+</div>
+  </div>
+</section>
+<footer class="bg-white">
+<div class="w-[85%] m-auto">
+  <div class="grid grid-cols-1 md:pt-[0] pt-[100px] gap-y-[50px] md:grid-cols-3 gap-x-[100px] pl-[100px]">
+  <div class="flex flex-col">
+    <span class="font-[700] text-[18px]">Support</span>
+    <span class="text-[18px] w-[170px] mt-[30px]">685 Market Street,
+      Las Vegas, LA 95820,
+      United States.</span>
+      <span class="text-[18px] mt-[30px]">example@domain.com</span>
+      <span class="text-[18px] mt-[10px]">(+01) 850-315-5862</span>
+  </div>
+  <div class="flex flex-col">
+    <span class="text-[18px] font-[700]">Account</span>
+    <span class="text-[18px] mt-[30px]">My Account</span>
+    <span class="text-[18px] mt-[15px]">Login / Register</span>
+    <span class="text-[18px] mt-[10px]">Cart</span>
+    <span class="text-[18px] mt-[5px]">Wishlist</span>
+    <span class="text-[18px] mt-[10px]">Shop</span>
+  </div>
+  <div class="flex flex-col">
+    <span class="text-[18px] font-[700]">Quick Link</span>
+    <span class="text-[18px] mt-[30px]">Privacy Policy</span>
+    <span class="text-[18px] mt-[15px]">Terms Of Use</span>
+    <span class="text-[18px] mt-[10px]">FAQ</span>
+    <span class="text-[18px] mt-[5px]">Contact</span>
+    <span class="text-[18px] mt-[10px]">Contact</span>
+  </div>
+</div>
+</div>
+</footer>
+ 
+  </body>
+</html>
